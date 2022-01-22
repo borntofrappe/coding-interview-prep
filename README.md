@@ -115,3 +115,23 @@ If you were to rectify the order first you'd access the name in the second item 
 -.sort((a, b) => b[0] < a[0])
 +.sort((a, b) => b[1] < a[1])
 ```
+
+### [No Repeats Please](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/no-repeats-please)
+
+The challenge asks to consider the number of permutations for the characters in an input string disregarding those permutations in which two letters are adjacent.
+
+The script works by implementing [Heap's algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) in order to generate all possible permutations.
+
+From this starting point it is possible to rely on a regular expression to find strings with adjacent characters:
+
+1. capture a character with parenthesis
+
+   ```js
+   /(\w)/;
+   ```
+
+2. consider if the character is repeated immediately afterwards
+
+   ```js
+   /(\w)\1/;
+   ```
