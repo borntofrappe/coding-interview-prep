@@ -118,7 +118,7 @@ If you were to rectify the order first you'd access the name in the second item 
 
 ### [No Repeats Please](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/no-repeats-please)
 
-The challenge asks to consider the number of permutations for the characters in an input string disregarding those permutations in which two letters are adjacent.
+The challenge asks to consider the number of permutations for the characters in an input string disregarding those permutations in which two letters are repeated one next to the other.
 
 The script works by implementing [Heap's algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) in order to generate all possible permutations.
 
@@ -135,3 +135,15 @@ From this starting point it is possible to rely on a regular expression to find 
    ```js
    /(\w)\1/;
    ```
+
+### [Implement Bubble Sort](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-bubble-sort)
+
+The assignment asks to sort elements in an array using bubble sort. The specific algorithm is quite easy to understand, and considerably inefficient as it requires to iterate through the array as many times as the array is long.
+
+The algorithm works as follows:
+
+- loop through the array considering elements in pairs
+
+- if the first element is greater than the second — the values are sorted in ascending order — swap the two values in place
+
+At the end of the loop the array is not sorted, but the largest element is positioned at the very end. The idea is to then repeat the process considering one less element. Larger values are progressively pushed to the end finally leading to the sorted data structure.
