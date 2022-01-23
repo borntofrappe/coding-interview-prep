@@ -138,12 +138,20 @@ From this starting point it is possible to rely on a regular expression to find 
 
 ### [Implement Bubble Sort](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-bubble-sort)
 
-The assignment asks to sort elements in an array using bubble sort. The specific algorithm is quite easy to understand, and considerably inefficient as it requires to iterate through the array as many times as the array is long.
+The assignment asks to sort elements in an array in ascending order through bubble sort.
 
 The algorithm works as follows:
 
 - loop through the array considering elements in pairs
 
-- if the first element is greater than the second — the values are sorted in ascending order — swap the two values in place
+- if the first element is greater than the second swap the two values in place
 
 At the end of the loop the array is not sorted, but the largest element is positioned at the very end. The idea is to then repeat the process considering one less element. Larger values are progressively pushed to the end finally leading to the sorted data structure.
+
+### [Implement Selection Sort](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-selection-sort)
+
+The assignment asks to sort elements in an array in ascending order through selection sort.
+
+The algorithm works by continuously looking for the smallest value and positioning the element at the beginning of the array.
+
+Loop through the entire array and place the smallest value at index `0`. Loop through the array skipping the first value and place the smallest value at index `1` and so forth and so on.
