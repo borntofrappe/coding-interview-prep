@@ -155,3 +155,13 @@ The assignment asks to sort elements in an array in ascending order through sele
 The algorithm works by continuously looking for the smallest value and positioning the element at the beginning of the array.
 
 Loop through the entire array and place the smallest value at index `0`. Loop through the array skipping the first value and place the smallest value at index `1` and so forth and so on.
+
+### [Implement Insertion Sort](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort)
+
+The assignment asks to sort elements in an array in ascending order through insertion sort.
+
+The idea is to build a sorted array instead of modifying the input data structure:
+
+- add the elements from the input array
+
+- loop through the new data structure backwards, swapping the elements to have smaller values positioned at the very beginning
