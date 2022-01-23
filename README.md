@@ -165,3 +165,19 @@ The idea is to build a sorted array instead of modifying the input data structur
 - add the elements from the input array
 
 - loop through the new data structure backwards, swapping the elements to have smaller values positioned at the very beginning
+
+### [Implement Quick Sort](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort)
+
+The assignment asks to sort elements in an array in ascending order through quick sort.
+
+The algorithm works recursively by creating smaller and smaller arrays, split by an arbitrary value, a pivot:
+
+- in the base case, where the array has one or less items, return the data structure
+
+- consider an arbitrary pivot value
+
+- split the array into two subarrays of smaller and greater values
+
+- recursively call the function on the smaller and greater arrays
+
+- collect the result in an array with the smaller values, the pivot values, and the greater values
