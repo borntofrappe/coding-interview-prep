@@ -181,3 +181,5 @@ The algorithm works recursively by creating smaller and smaller arrays, split by
 - recursively call the function on the smaller and greater arrays
 
 - collect the result in an array with the smaller values, the pivot values, and the greater values
+
+### [Implement Merge Sort](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-merge-sort)
