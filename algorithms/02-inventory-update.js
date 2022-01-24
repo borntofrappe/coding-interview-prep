@@ -1,9 +1,3 @@
-/* https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/inventory-update
-
-- compare 
-- items which do not exist in the first array
-- return the array sorted in alpha
-*/
 function updateInventory(arr1, arr2) {
   return Object.entries(
     [...arr1, ...arr2].reduce((acc, curr) => {

@@ -1,12 +1,3 @@
-/* https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/find-the-symmetric-difference
-
-_symmetric difference A △ B_: elements which are in either set, but not in both 
-
-- find the symmetric difference for a variable number of input arrays
-- for more than two arrays consider the symmetric difference in sequence, A △ B △ C -> (A △ B) △ C
-- remove duplicates from the final array
-*/
-
 function sym() {
   return [...arguments]
     .reduce((acc, curr) => {

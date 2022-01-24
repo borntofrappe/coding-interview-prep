@@ -4,9 +4,7 @@ function pairwise(arr, arg) {
     if (!indexes[i]) {
       const j = arr
         .slice(i + 1)
-        .findIndex(
-          (d, k) => d + arr[i] === arg && !indexes[i] && !indexes[k + i + 1]
-        );
+        .findIndex((d, k) => d + arr[i] === arg && !indexes[k + i + 1]);
 
       if (j !== -1) {
         indexes[i] = i;
